@@ -56,7 +56,19 @@ body{
 
 
 
-    
+    /*animaciones del headear*/
+     
+    header a:hover{
+    color: blue;
+    font-weight: bold;
+}
+
+.subTitulo:hover{
+    background-color: indigo;
+    padding: 20px;
+    transform: scale(1,2);
+    transition: 2s;
+}
 
 
 /*estilos del main*/
@@ -132,12 +144,39 @@ body{
 
  /*main*/
 
+ /*animaciones*/
+ .parrafo1:hover{
+    background-color: indigo;
+    color: black;
+    transform: scale(1.2) ;
+    transition: 3s;
+ }
+
+.parrafo2:hover{
+    background-color: ghostwhite;
+    color:darkblue;
+    transform: scale(1.2) ;
+    transition: 3s;
+}
+.parrafo3:hover{
+    background-color: burlywood;
+    color:black;
+    transform: scale(1.1) ;
+    transition: 3s;
+}
+
+.parrafo4:hover{
+    background-color: rgb(224, 66, 66);
+    color:black;
+    transform: scale(1.1) ;
+    transition: 3s;
+}
 
 
 .parrafoInfo{
     display: grid;
-    grid-template-columns:  auto auto  ;
-    grid-template-rows:  ;
+    grid-template-columns:  repeat(2, 1fr) ;
+    grid-template-rows:  0.8fr 0.8fr;
     grid-template-areas: " titulo1 titulo1"
                          " parrafo1 parrafo2"
                          " parrafo3 parrafo4 ";
@@ -156,7 +195,7 @@ body{
     margin:  0rem 5rem 5rem 5rem;
     padding: 50px;
     text-align: center;
-    background-color: black;
+    background-color: ;
     color: white;
 }
 .parrafo2{
@@ -164,7 +203,7 @@ body{
     margin:  0rem 5rem 5rem 5rem;
     padding: 50px;
     text-align: center;
-    background-color: black;
+    background-color: ;
     color: white;
 }
 .parrafo3{
@@ -172,7 +211,7 @@ body{
     margin:  0rem 5rem 5rem 5rem;
     padding: 50px;
     text-align: center;
-    background-color: black;
+    background-color: ;
     color: white;
 
 }
@@ -180,7 +219,7 @@ body{
     margin:  0rem 5rem 5rem 5rem;
     padding: 50px;
     text-align: center;
-    background-color: black;
+    background-color: ;
     color: white;
     grid-area:parrafo4 ;
 }

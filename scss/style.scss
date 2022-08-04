@@ -1,3 +1,15 @@
+
+@import "base/extend";
+@import "base/maps";
+@import "base/mixin";
+@import "base/variables";
+
+
+
+
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -10,7 +22,7 @@
 
 //*nesting
 
-$color-negro: black;
+
 
 
 /*estilos generales*/
@@ -22,12 +34,9 @@ body{
 /*estilos del header*/
 
 header{
-    width: 100%;
+    @include flex;
     background-color: $color-negro;
-    padding: 1.5rem 6rem;
-    display: flex;
-    
-    margin-bottom: 4rem; 
+   
     nav{
         ul{
             margin-top:20px;
@@ -42,19 +51,13 @@ header{
 }
 
 
-   
-
 
 .ul a{
-    color: white;
-    
+    color: $color-dos;
 }
-
 .logo{
-    color:white;
-    font-size:2.1rem;
-    text-transform: uppercase;
-    font-weight: 800;
+    color:$color-dos;
+    @extend %logo;
     
 }
 
@@ -68,13 +71,13 @@ header a:hover{
 }
 
 .subTitulo:hover{
-    background-color: indigo;
-    padding: 1px;
-    transform:scale(1,2);
-    transition: 2s;
+    @extend %titulo1;
+
+
 }
 
 /*estilos del main*/
+
 
 
 .subTitulo{
@@ -84,12 +87,21 @@ header a:hover{
 }
 
 
+
+
+.titulo1{
+    @extend %titulo1;
+    text-align: center;
+    font-size: 33px;
+    margin: 120px;
+    
+    
+}
+
 .mainP{
-    margin: 20px;
-    display: flex;
-    padding: 10px;
+   @extend %maip;
     background-color: $color-negro;
-    color: white;
+    color: $color-dos;
 
 }
 
@@ -101,10 +113,10 @@ header a:hover{
 }
 
 .mainP2{
-      display: flex;
+    display: flex;
     padding: 20px;
     background-color: $color-negro;
-    color: white;
+    color: $color-dos;
 }
 
 .imagenes3{
@@ -112,17 +124,31 @@ header a:hover{
     flex-wrap:wrap;
     flex-direction: row;
     margin: 100px;
-
-
-    width: 100px;
-    height: 100px;
+    width: 10px;
+    height: 50px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
 footer{
     width: 100%;
     background-color: $color-negro;
-    color: white;
+    color: $color-dos;
     .contenedor1{
         display: flex;
         width: 100%;
@@ -147,3 +173,6 @@ footer{
     }
 }
   
+
+
+

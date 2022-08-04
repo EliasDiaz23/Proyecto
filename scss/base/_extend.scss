@@ -1,0 +1,21 @@
+%logo{
+    font-size:2.1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+
+%mainp{
+    margin: 20px;
+    display: flex;
+    padding: 10px;
+
+}
+
+%titulo{
+    background-color: indigo;
+    padding: 1px;
+    transform:scale(1,2);
+    transition: 2s;
+}
+

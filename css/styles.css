@@ -12,10 +12,10 @@ body {
 /*estilos del header*/
 header {
   width: 100%;
-  background-color: black;
   padding: 1.5rem 6rem;
   display: flex;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  background-color: black; }
   header nav ul {
     margin-top: 20px;
     display: flex;
@@ -74,22 +74,33 @@ header a:hover {
   width: 100px;
   height: 100px; }
 
+
+
+
+
+
+
+  
 footer {
   width: 100%;
   background-color: black;
   color: white; }
-  footer .contenedor1 {
+  
+footer .contenedor1 {
     display: flex;
     width: 100%;
     max-width: 1200px;
     margin-top: 3rem; }
-  footer .contactoF {
+  
+footer .contactoF {
     font-size: 20px;
     display: flex; }
-  footer .contactoInsta {
+  
+footer .contactoInsta {
     display: inline-block;
     margin-top: 2rem;
     margin-right: 4rem; }
-  footer .derechos {
+ 
+footer .derechos {
     display: flex;
     margin-top: 8rem; }
